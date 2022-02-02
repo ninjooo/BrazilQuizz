@@ -30,7 +30,7 @@ let questions = [{
         question: "Колко тона тежи статуята на Христос Спасител? ",
         choice1: "600",
         choice2: "630",
-        choice3: "635г",
+        choice3: "635",
         choice4: "700",
         answer: 3,
     },
@@ -66,7 +66,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('end.html')
+        return window.location.href = "end.html"
     }
 
     questionCounter++
